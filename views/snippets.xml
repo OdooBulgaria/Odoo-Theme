@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<openerp>
+    <data>
+        <template id='jarsa_snippets_menu' inherit_id='website.snippets' name='Jarsa Snippets Menu'>
+            <xpath expr="//ul[@class='nav navbar-nav nav-tabs']" position='inside'>
+                <li><a href="#snippet_jarsa" data-toggle="tab">Jarsa</a></li>
+            </xpath>
+        </template>
+        <template id='jarsa_snippets' inherit_id='website.snippets' name='Jarsa Snippets'>
+            <xpath expr="//div[@class='tab-content']" position='inside'>
+                <div id='snippet_jarsa' class='tab-pane'>
+                    <div>
+                        <!-- Thumbnail -->
+                        <div class='oe_snippet_thumbnail'>
+                            <img class='oe_snippet_thumbnail_img' src='/my_theme/static/src/img/snippet/snippet_thumbs.png'/>
+                            <span class='oe_snippet_thumbnail_title'>My Snippet</span>
+                        </div>
+                        <!-- Snippet body -->
+                        <section class='oe_snippet_body'>
+                            <div class='container'>
+                                <hr/>
+                                <h1>This is a simple snippet</h1>
+                                <hr/>
+                            </div>
+                        </section>
+                    </div>
+                    <div>
+                        <!-- Thumbnail -->
+                        <div class='oe_snippet_thumbnail'>
+                            <img class='oe_snippet_thumbnail_img' src='/my_theme/static/src/img/snippet/snippet_thumbs.png'/>
+                            <span class='oe_snippet_thumbnail_title'>Test2</span>
+                        </div>
+                        <!-- Snippet body -->
+                        <section class='oe_snippet_body'>
+                            <div class="container">
+                                <!-- Standard button -->
+                                <button type="button" class="btn btn-default">Default</button>
+
+                                <!-- Provides extra visual weight and identifies the primary action in a set of buttons -->
+                                <button type="button" class="btn btn-primary">Primary</button>
+
+                                <!-- Indicates a successful or positive action -->
+                                <button type="button" class="btn btn-success">Success</button>
+
+                                <!-- Contextual button for informational alert messages -->
+                                <button type="button" class="btn btn-info">Info</button>
+
+                                <!-- Indicates caution should be taken with this action -->
+                                <button type="button" class="btn btn-warning">Warning</button>
+
+                                <!-- Indicates a dangerous or potentially negative action -->
+                                <button type="button" class="btn btn-danger">Danger</button>
+
+                                <!-- Deemphasize a button by making it look like a link while maintaining button behavior -->
+                                <button type="button" class="btn btn-link">Link</button>
+                            </div>
+                        </section>
+                    </div>
+                </div>
+            </xpath>
+        </template>
+    </data>
+</openerp>

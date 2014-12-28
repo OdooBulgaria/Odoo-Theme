@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<openerp>
+    <data>
+        <template id='jarsa_themes' name='Themes' inherit_id='website.themes'>
+        	<xpath expr="//div[@id='themes-list']">
+        		<div class="col-md-4">
+                <div class="well text-center">
+                  <div class="image">
+                    <img src="/website/static/src/img/bootswatch_default_thumbnail.png" class="img-responsive" alt="Jarsa Theme"/>
+                  </div>
+                  <div class="options">
+                    <h3>Jarsa</h3>
+                    <p>Pure Test</p>
+                    <a class="btn btn-info" href="/website/theme_change?theme_id=my_theme.theme_jarsa">Apply</a>
+                  </div>
+                </div>
+              </div>
+        	</xpath>
+        </template>
+        <template id="my_theme.theme_jarsa" name="Jarsa" inherit_id="website.theme" active="False" customize_show="True">
+            <xpath expr="//link[@id='bootstrap_css']" position="replace">
+                <link rel='stylesheet' type='text/css' href='/my_theme/static/src/css/jarsa.css'/>
+            </xpath>
+        </template>
+    </data>
+</openerp>
